@@ -31,3 +31,11 @@ body {
 .quote-text {
 	font-size: 2.75rem;
 }
+/* onChange with JS */
+.long-text {
+	font-size: 2rem;
+}
+
+.fa-quote-left {
+	font-size: 4rem;
+}
