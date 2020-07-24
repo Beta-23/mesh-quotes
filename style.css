@@ -39,3 +39,20 @@ body {
 .fa-quote-left {
 	font-size: 4rem;
 }
+
+.quote-author {
+	margin-top: 15px;
+	font-size: 2rem;
+	font-weight: 400;
+	font-style: italic;
+}
+
+/* Media Query: For tablet or smaller divices */
+@media screen and (max-width: 1000px) {
+	.quote-container {
+		margin: auto 10px;
+	}
+	.quote-text {
+		font-size: 2.5rem;
+	}
+}
