@@ -41,10 +41,44 @@ body {
 }
 
 .quote-author {
-	margin-top: 15px;
 	font-size: 2rem;
 	font-weight: 400;
 	font-style: italic;
+	margin-top: 15px;
+}
+
+.button-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+button {
+	background: #333;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.2rem;
+	height: 2.5rem;
+	padding: 0.5rem 1.8rem;
+	outline: none;
+}
+button:hover {
+	filter: brightness(115%);
+}
+
+button:active {
+	transform: translate(0, 0.3rem);
+	box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+	color: #38a1f3;
+}
+.fa-twitter {
+	font-size: 1.5rem;
 }
 
 /* Media Query: For tablet or smaller divices */
