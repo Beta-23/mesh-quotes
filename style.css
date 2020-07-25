@@ -69,6 +69,14 @@ button:hover {
 	filter: brightness(125%);
 }
 
+#twitter {
+	background: #1da1f2;
+}
+
+#twitter:hover {
+	filter: brightness(110%);
+}
+
 /* Media Query: For tablet or smaller divices */
 @media screen and (max-width: 1000px) {
 	.quote-container {
