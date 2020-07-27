@@ -7,5 +7,5 @@ Quotes Generator App
 [Documentation](https://forismatic.com/en/api/)
 
 ## Proxy Server via Heroku
-- This API enables cross-origin requests to anywhere.
-[Cross-Origin Requests](https://quiet-retreat-53485.herokuapp.com/)
+- This API enables cross-origin requests to anywhere. <br />
+[Cross-Origin Requests Proxy](https://quiet-retreat-53485.herokuapp.com/)
