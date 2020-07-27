@@ -42,6 +42,7 @@ function tweetQuote () {
 
 // Event Listeners
 newQuoteBtn.addEventListener('click', getQuote);
+twitterBtn.addEventListener('click', tweetQuote);
 
 // Get Quote onload
 getQuote();
