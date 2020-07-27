@@ -10,8 +10,17 @@ function loading () {
 	loader.hidden = false;
 	quoteContainer.hidden = true;
 }
+
+// Hide Loader
+function complete () {
+	if (!loader.hidden) {
+		quoteContainer.hidden = false;
+		loader.hidden = true;
+	}
+}
 // Get Quote From API
 async function getQuote () {
+	loading();
 	// Custom Proxy URL to make our API call in order to avoid a CORS error
 	const proxyUrl = 'https://quiet-retreat-53485.herokuapp.com/';
 	const apiUrl = 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
@@ -33,6 +42,8 @@ async function getQuote () {
 			quoteText.classList.remove('long-quote');
 		}
 		quoteText.innerText = data.quoteText;
+		// Stop Loader and Show Quote
+		complete();
 	} catch (error) {
 		getQuote();
 	}
@@ -51,5 +62,4 @@ newQuoteBtn.addEventListener('click', getQuote);
 twitterBtn.addEventListener('click', tweetQuote);
 
 // Get Quote onload
-// getQuote();
-loading();
+getQuote();
