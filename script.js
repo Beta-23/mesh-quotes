@@ -37,8 +37,11 @@ function tweetQuote () {
 	const quote = quoteText.innerText;
 	const author = authorText.innerText;
 	const twitterUrl = `https://twitter.com/intent/tweet?text=${quote} - ${author}`;
-	window.open(twitterUrl, '_blank'); // New Tab
+	window.open(twitterUrl, '_blank'); // Open twitter url in New Tab
 }
+
+// Event Listeners
+newQuoteBtn.addEventListener('click', getQuote);
 
 // Get Quote onload
 getQuote();
