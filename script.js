@@ -17,8 +17,7 @@ function removeLoadingSpinner () {
 	}
 }
 
-// Get Quote From API
-async function getQuote () {
+async function getQuoteFromAPI () {
 	showLoadingSpinner();
 	// We need to use a Proxy URL to make our API call in order to avoid a CORS error
 	const proxyUrl = 'https://quiet-retreat-53485.herokuapp.com/';
@@ -45,7 +44,7 @@ async function getQuote () {
 		// Stop Loading, Show Quote
 		removeLoadingSpinner();
 	} catch (error) {
-		getQuote();
+		getQuoteFromAPI();
 	}
 }
 
@@ -58,8 +57,8 @@ function tweetQuote () {
 }
 
 // Event Listeners
-newQuoteBtn.addEventListener('click', getQuote);
+newQuoteBtn.addEventListener('click', getQuoteFromAPI);
 twitterBtn.addEventListener('click', tweetQuote);
 
 // Get Quote onload
-getQuote();
+getQuoteFromAPI();
